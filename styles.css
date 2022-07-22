@@ -1,0 +1,69 @@
+:root {
+    --shadow-col:rgb(29, 28, 28);
+    --dark-bg: rgb(45, 42, 42);
+    --light-fg: rgb(248, 234, 234);
+    --accent-col: rgb(204, 123, 123);
+    --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+p, h1, h2, h3, li, a {
+    color: var(--light-fg);
+    font-family: var(--main-font);
+}
+
+h1, h2, h3 {
+    color:var(--accent-col);
+}
+
+a {
+    color: var(--accent-col);
+}
+
+.border, .topnav {
+    background-color: var(--shadow-col);
+    border-color: var(--light-fg);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 8px var(--shadow-col);
+}
+
+.topnav {
+    position: fixed;
+    top: 10px;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    padding: 8px 12px;
+    margin: 2px;
+
+    color: var(--light-fg);
+    font-family: var(--main-font);
+    font-size: large;
+    border-radius: 4px;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--light-fg);
+    color: var(--shadow-col);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--accent-col);
+    color: var(--light-fg);
+}
