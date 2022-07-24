@@ -25,14 +25,28 @@ a {
     color: var(--accent-col);
 }
 
-.border, .topnav {
+.wrap-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.round-border, .round-border--heading, .round-border--section, .topnav {
     background-color: var(--shadow-col);
     border-color: var(--light-fg);
     border-style: solid;
     border-radius: 10px;
     padding: 4px;
-    margin-bottom: 20px;
     box-shadow: 4px 4px 8px var(--shadow-col);
+}
+
+.round-border--heading {
+    padding: 10px;
+}
+
+.round-border--section {
+    padding: 0px 20px 10px;
+    margin-bottom: 10px;
 }
 
 .topnav {
