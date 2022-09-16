@@ -1,14 +1,14 @@
 :root {
-    --shadow-col:rgb(29, 28, 28);
-    --dark-bg: rgb(45, 42, 42);
+    --shadow-col:rgb(44, 42, 52);
+    --dark-bg: rgb(49, 51, 55);
     --light-fg: rgb(248, 234, 234);
-    --accent-col: rgb(204, 123, 123);
-    --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --accent-col: rgb(220, 146, 164);
+    --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: var(--dark-bg);
-    padding-top: 50px;
+    padding-top: 45px;
     padding-left: 10px;
 }
 
@@ -28,6 +28,14 @@ a {
 .wrap-panel {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.wrap-panel--vertical {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     gap: 5px;
 }
 
@@ -35,7 +43,7 @@ a {
     background-color: var(--shadow-col);
     border-color: var(--light-fg);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 14px;
     padding: 4px;
     box-shadow: 4px 4px 8px var(--shadow-col);
 }
@@ -45,7 +53,7 @@ a {
 }
 
 .round-border--section {
-    padding: 0px 20px 10px;
+    padding: 0px 15px 12px;
     margin-bottom: 10px;
 }
 
@@ -53,6 +61,7 @@ a {
     position: fixed;
     top: 10px;
     overflow: hidden;
+    padding: 2px;
 }
 
 /* Style the links inside the navigation bar */
@@ -62,9 +71,8 @@ a {
     margin: 2px;
 
     color: var(--light-fg);
-    font-family: var(--main-font);
     font-size: large;
-    border-radius: 4px;
+    border-radius: 8px;
 
     text-align: center;
     text-decoration: none;
