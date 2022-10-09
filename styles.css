@@ -1,8 +1,8 @@
 :root {
-    --shadow-col:rgb(44, 42, 52);
-    --dark-bg: rgb(49, 51, 55);
-    --light-fg: rgb(248, 234, 234);
-    --accent-col: rgb(220, 146, 164);
+    --shadow-col:rgb(70, 55, 65);
+    --dark-bg: rgb(87, 73, 83);
+    --light-fg: rgb(254, 246, 252);
+    --accent-col: rgb(230, 153, 178);
     --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
