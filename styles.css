@@ -1,8 +1,10 @@
 :root {
-    --shadow-col:rgb(70, 55, 65);
-    --dark-bg: rgb(87, 73, 83);
+    --shadow-col:rgb(25, 20, 31);
+    --border-col:rgb(40, 29, 46);
+    --dark-bg: rgb(73, 59, 81);
     --light-fg: rgb(254, 246, 252);
-    --accent-col: rgb(230, 153, 178);
+    --panel-col: rgba(46, 36, 52, 0.6);
+    --accent-col: rgb(255, 103, 146);
     --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -39,22 +41,29 @@ a {
     gap: 5px;
 }
 
-.round-border, .round-border--heading, .round-border--section, .topnav {
-    background-color: var(--shadow-col);
+.round-border, .round-border--heading, .round-border--section, .round-border--panel, .topnav {
+    background-color: var(--border-col);
     border-color: var(--light-fg);
-    border-style: solid;
+    border-style: none;
     border-radius: 14px;
     padding: 4px;
     box-shadow: 4px 4px 8px var(--shadow-col);
 }
 
 .round-border--heading {
-    padding: 10px;
+    padding: 10px 18px;
 }
 
 .round-border--section {
-    padding: 0px 15px 12px;
+    padding: 2px 18px;
     margin-bottom: 10px;
+}
+
+.round-border--panel {
+    padding: 2px 18px;
+    background-color: var(--panel-col);
+    border-radius: 10px;
+    border-style: none;
 }
 
 .topnav {
@@ -72,7 +81,7 @@ a {
 
     color: var(--light-fg);
     font-size: large;
-    border-radius: 8px;
+    border-radius: 10px;
 
     text-align: center;
     text-decoration: none;
