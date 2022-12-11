@@ -15,37 +15,35 @@
 
 <h1 class="round-border--heading">Projects</h1>
 <div class="round-border--panel">
-    <p>Pretty self-explanatory, here I put projects, downloads and stuff.</p>
-</div>
-<br>
-
-<div class="round-border--section">
-    <h1>Unity</h1>
-    <div class="wrap-panel">
-        <div class="round-border" style="display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 6px;">
-            <a href="projects/SliceProject/index.html">Flip</a>
-            <img style="margin-top: 10px" src="projects/SliceProject/icon.png"/>
-        </div>
-    </div>
-    <br>
+    <p>Pretty self-explanatory, here I put projects, downloads and stuff!</p>
 </div>
 
 <div class="round-border--section">
-    <h1>Downloads</h1>
+    <h1>Links and Downloads</h1>
+    <p>Dates are in (mm/dd/yyyy) format.</p>
+
     <ul>
+        <li>Flip Project! <a href=https://sweetfollyfox.itch.io/flip-project>Itch.io Page (12/11/2022)</a></li>
         <li>One of the few games I've actually finished. I only have an android build. <a href="projects/downloads/Potato2D_v0.1.2.apk">Potato2D_v0.1.2.apk (19 MB) (02/22/2020)</a></li>
         <li>Scrapped Mario Kart-like game prototype. <a href="projects/downloads/KartRacing.zip">KartRacing.zip (21 MB) (03/18/2020)</a></li>
     </ul>
-</div>
 
-<div class="round-border--section">
-    <h1>Godot HTML5 Zone</h1>
+    <h2>Unity Web</h2>
+    <div class="wrap-panel">
+        <div class="round-border--panel" style="display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 6px;">
+            <a href="projects/unityWeb/SliceProject/index.html">Flip</a>
+            <img style="margin-top: 10px" src="projects/unityWeb/SliceProject/icon.png"/>
+        </div>
+    </div>
+
+    <h2>Godot HTML5 Zone</h2>
     <div id="godotContainer" class="wrap-panel"></div>
     <br>
+
 </div>
 
 <div class="round-border--section">
-    <h1>Art, screenshots and other media</h1>
+    <h1>Art, Screenshots and other media</h1>
     <div class="wrap-panel">
         <img class="round-border" height="256px" src="projects/media/look.png"/>
         <img class="round-border" height="256px" src="projects/media/apple.jpg"/>
@@ -67,7 +65,7 @@ window.onload = function() {
 
         const root = document.createElement("div");
         root.style = "display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 6px;";
-        root.className = "round-border";
+        root.className = "round-border--panel";
 
         const link = document.createElement("a");
         link.href = "projects/godotWeb/" + name + "/" + name + ".html";

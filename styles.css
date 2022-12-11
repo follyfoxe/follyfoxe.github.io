@@ -1,10 +1,10 @@
 :root {
-    --shadow-col:rgb(25, 20, 31);
-    --border-col:rgb(40, 29, 46);
-    --dark-bg: rgb(73, 59, 81);
+    --shadow-col:rgb(25, 20, 31, 0.4);
+    --border-col: rgb(21, 8, 15);
+    --dark-bg: rgb(73, 61, 79);
     --light-fg: rgb(254, 246, 252);
-    --panel-col: rgba(46, 36, 52, 0.6);
-    --accent-col: rgb(255, 103, 146);
+    --panel-col: rgb(65, 27, 50);
+    --accent-col: rgb(255, 104, 167);
     --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -52,10 +52,12 @@ a {
 
 .round-border--heading {
     padding: 10px 18px;
+    margin-bottom: 15px;
 }
 
 .round-border--section {
     padding: 2px 18px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
