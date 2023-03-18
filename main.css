@@ -1,0 +1,142 @@
+@font-face {
+    font-family: eduNswAct;
+    src: url(fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+    --panel-col: rgb(67, 40, 55);
+    --dark-bg: rgb(73, 61, 79);
+    --light-fg: rgb(254, 246, 252);
+    /*--panel-col: rgb(65, 27, 50);*/
+    --accent-col: rgb(229, 98, 157);
+}
+
+body {
+    font-family: eduNswAct, monospace;
+
+    background-color: var(--panel-col);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--light-fg);
+    padding: 20px;
+    padding-top: 70px;
+}
+
+h1 {
+    font-size: 240%;
+    margin: 2px 4px;
+}
+
+p, li, a {
+    font-family: nunito, monospace;
+    font-size: 105%;
+    margin: 2px 4px;
+}
+
+a {
+    font-size: 100%;
+    color: var(--accent-col);
+}
+
+.wrap-panel, .wrap-panel--top, .wrap-panel--vertical, .wrap-panel--stretch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.wrap-panel--top {
+    align-items: start;
+}
+
+.wrap-panel--stretch {
+    align-items: stretch;
+}
+
+.wrap-panel--vertical {
+    flex-direction: column;
+}
+
+.round-panel, .round-panel--block, .round-panel--heading, .topnav {
+    width: fit-content;
+    margin: 0px;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: var(--panel-col);
+    border-color: var(--accent-col);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 24px;
+}
+
+.round-panel--block {
+    display: block;
+}
+
+.round-panel--heading {
+    background-color: var(--accent-col);
+    border-color: var(--light-col);
+}
+
+.topnav {
+    position: fixed;
+    top: 10px;
+    overflow: hidden;
+    padding: 2px;
+    
+    display: flex;
+    align-items: stretch;
+    box-shadow: 4px 4px 8px black;
+}
+
+.topnav h1 {
+    margin: 8px;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a, button {
+    padding: 4px 8px;
+    margin: 2px;
+
+    background-color: var(--panel-col);
+    color: var(--light-fg);
+    font-size: larger;
+    font-weight: bolder;
+    
+    border-color: var(--light-col);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 17px;
+
+    font-family: eduNswAct, monospace;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, button:hover {
+    background-color: var(--light-fg);
+    color: var(--panel-col);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active, button:active {
+    background-color: var(--accent-col);
+    color: var(--light-fg);
+}

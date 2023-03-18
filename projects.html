@@ -1,88 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Folly's dumb website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Folly's dum website :3</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/ballCanvas.js" type="text/javascript" defer></script>
+    <script src="components/projectLink.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8">
 </head>
 <body>
 
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="projects.html">Projects</a>
-    <a href="about.html">About</a>
+<header-nav></header-nav>
+
+<h1 class="round-panel--heading">&#10084; Projects &#10084;</h1>
+<br>
+<div class="round-panel">
+    <p>
+        This is my projects section!!!!!<br>
+        Here i'll put some notable projects once in a while :3<br>
+        Dates are in a <b>(dd/mm/yyyy)</b> format :3
+    </p>
+    <div class="wrap-panel">
+        <img src="images/grrgoorbe-1.gif" height="64"/>
+        <img src="images/fox.gif" height="64"/>
+    </div>
 </div>
 
-<h1 class="round-border--heading">Projects</h1>
-<div class="round-border--panel">
-    <p>Pretty self-explanatory, here I put projects, downloads and stuff!</p>
-</div>
-
-<div class="round-border--section">
-    <h1>Links and Downloads</h1>
-    <p>Dates are in (mm/dd/yyyy) format.</p>
-
+<br>
+<h1 class="round-panel--heading">&#10084; Links and downloads &#10084;</h1>
+<br>
+<div class="round-panel--block">
     <ul>
-        <li>Flip Project! <a href=https://sweetfollyfox.itch.io/flip-project>Itch.io Page (12/11/2022)</a></li>
-        <li>One of the few games I've actually finished. I only have an android build. <a href="projects/downloads/Potato2D_v0.1.2.apk">Potato2D_v0.1.2.apk (19 MB) (02/22/2020)</a></li>
-        <li>Scrapped Mario Kart-like game prototype. <a href="projects/downloads/KartRacing.zip">KartRacing.zip (21 MB) (03/18/2020)</a></li>
+        <li>Flip Project! <a href=https://sweetfollyfox.itch.io/flip-project>Itch.io Page (11/12/2022)</a></li>
+        <li>A really old one, I only have an android build :3  <a href="archive/projects/downloads/Potato2D_v0.1.2.apk">Potato2D_v0.1.2.apk (19 MB) (22/02/2020)</a></li>
+        <li>Scrapped Mario Kart-like game prototype <a href="archive/projects/downloads/KartRacing.zip">KartRacing.zip (21 MB) (18/03/2020)</a></li>
     </ul>
-
-    <h2>Unity Web</h2>
+    <h1>Unity Web</h1><br>
     <div class="wrap-panel">
-        <div class="round-border--panel" style="display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 6px;">
-            <a href="projects/unityWeb/SliceProject/index.html">Flip</a>
-            <img style="margin-top: 10px" src="projects/unityWeb/SliceProject/icon.png"/>
-        </div>
+        <project-link src="archive/projects/unityWeb/SliceProject/icon.png" href="archive/projects/unityWeb/SliceProject/index.html">Flip Project</project-link>
     </div>
 
-    <h2>Godot HTML5 Zone</h2>
-    <div id="godotContainer" class="wrap-panel"></div>
     <br>
-
-</div>
-
-<div class="round-border--section">
-    <h1>Art, Screenshots and other media</h1>
+    <h1>Godot HTML5</h1><br>
     <div class="wrap-panel">
-        <img class="round-border" height="256px" src="projects/media/pfp2.png"/>
-        <img class="round-border" height="256px" src="projects/media/look.png"/>
-        <img class="round-border" height="256px" src="projects/media/apple.jpg"/>
-        <img class="round-border" height="256px" src="projects/media/soft_background.png"/>
-        <img class="round-border" height="256px" src="projects/media/PotatoRender2.png"/>
-        <img class="round-border" height="256px" src="projects/media/folly_render.png"/>
-        <img class="round-border" height="256px" src="projects/media/dialog_scrapped.jpg"/>
+        <project-link src="archive/projects/godotWeb/HTMLTest/HTMLTest.icon.png" href="archive/projects/godotWeb/HTMLTest/HTMLTest.html">HTML Test</project-link>
+        <project-link src="archive/projects/godotWeb/MarioGodot/MarioGodot.icon.png" href="archive/projects/godotWeb/MarioGodot/MarioGodot.html">Mario Godot</project-link>
     </div>
-    <br>
 </div>
 
-<script>
-window.onload = function() {
-    const projectNames = ["HTMLTest", "MarioGodot"];
-    const container = document.getElementById("godotContainer");
+<br>
+<h1 class="round-panel--heading">&#10084; Media &#10084;</h1>
+<br>
+<div class="round-panel wrap-panel">
+    <div class="round-panel">
+        <p>Music54_wip2.mp3 (18/03/2023)</p>
+        <audio controls>
+            <source src="projects/media/Music54_wip2.mp3" type="audio/mpeg">
+            Your browser doesn't support audio &gt;w&lt;
+        </audio>
+        <p>Music50_wip.mp3 (25/02/2023)</p>
+        <audio controls>
+            <source src="projects/media/Music50_wip.mp3" type="audio/mpeg">
+            Your browser doesn't support audio &gt;w&lt;
+        </audio>
+    </div>
+    <img src="projects/media/uhhhh.png" height="256"/>
+    <img src="projects/media/20230309_181347.jpg" height="256"/>
+    <img src="projects/media/flipaclip.gif" height="256"/>
+    <img src="projects/media/window.png" height="256"/>
+    <img src="archive/projects/media/look.png" height="256"/>
+    <img src="archive/projects/media/apple.jpg" height="256"/>
+    <img src="archive/projects/media/dialog_scrapped.jpg" height="256"/>
+    <img src="archive/projects/media/PotatoRender2.png" height="256"/>
+</div>
 
-    for (let i = 0; i < projectNames.length; i++) {
-        const name = projectNames[i];
-
-        const root = document.createElement("div");
-        root.style = "display: flex; flex-direction: column; align-items: center; padding: 10px; border-radius: 6px;";
-        root.className = "round-border--panel";
-
-        const link = document.createElement("a");
-        link.href = "projects/godotWeb/" + name + "/" + name + ".html";
-        link.innerText = name;
-
-        const img = document.createElement("img");
-        img.style = "margin-top: 10px";
-        img.src = "projects/godotWeb/" + name + "/" + name + ".icon.png";
-        img.width = 64;
-
-        root.appendChild(link);
-        root.appendChild(img);
-        container.appendChild(root);
-    }
-};
-</script>
+<br>
+<ball-canvas w="1024" h="512"></ball-canvas>
 
 </body>
 </html>
