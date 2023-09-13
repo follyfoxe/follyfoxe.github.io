@@ -7,6 +7,7 @@
   src: url(../fonts/Nunito-VariableFont_wght.ttf);
 }
 body {
+  font-size: 100%;
   font-family: Nunito, monospace;
   background-color: #472e3e;
   background-repeat: no-repeat;
