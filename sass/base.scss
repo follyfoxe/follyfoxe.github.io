@@ -1,0 +1,145 @@
+@use 'colors';
+@use 'fonts';
+
+body {
+    font-family: fonts.$main;
+
+    background-color: colors.$bg;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: colors.$fg;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: fonts.$heading;
+}
+
+h1 {
+    font-size: 240%;
+    margin: 2px 4px;
+}
+
+p, li, a {
+    font-size: 105%;
+    margin: 2px 4px;
+}
+
+a {
+    font-size: 100%;
+    color: colors.$accent;
+}
+
+.wrap-panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+.wrap-panel--top {
+    @extend .wrap-panel;
+    align-items: start;
+}
+
+.wrap-panel--stretch {
+    @extend .wrap-panel;
+    align-items: stretch;
+}
+
+.wrap-panel--vertical {
+    @extend .wrap-panel;
+    flex-direction: column;
+}
+
+.wrap-panel--topleft {
+    @extend .wrap-panel;
+    align-items: start;
+    flex-direction: column;
+}
+
+%panel-shared {
+    margin: 0px;
+    padding: 6px;
+
+    background-color: colors.$panel;
+    border-color: colors.$accent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 18px;
+}
+
+.round-panel {
+    @extend .wrap-panel;
+    @extend %panel-shared;
+    width: fit-content;
+    box-shadow: 2px 2px 8px colors.$panel;
+}
+
+.round-panel--block {
+    @extend %panel-shared;
+    display: block;
+}
+
+.round-panel--heading {
+    @extend .round-panel;
+    background-color: colors.$accent;
+    border-color: colors.$fg;
+}
+
+button {
+    @extend .round-panel;
+
+    gap: 2px;
+    border-color: colors.$fg;
+    border-width: 2px;
+    border-radius: 12px;
+
+    padding: 3px 7px;
+    margin: 2px;
+
+    color: colors.$fg;
+    font-family: fonts.$heading;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+button:hover {
+    background-color: colors.$fg;
+    color: colors.$panel;
+}
+
+button:active {
+    background-color: colors.$accent;
+    color: colors.$fg;
+}
+
+.topnav {
+    @extend %panel-shared;
+    position: fixed;
+    top: 10px;
+    overflow: hidden;
+    padding: 2px;
+    
+    display: flex;
+    align-items: stretch;
+    box-shadow: 4px 4px 8px black;
+
+    a {
+        @extend button;
+        text-decoration: none;
+    }
+
+    a.active {
+        @extend :active;
+    }
+
+    h1 {
+        @extend .wrap-panel;
+        margin: 8px;
+        font-size: larger;
+    }
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: EduNswAct;
+    src: url(../fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+$main: Nunito, monospace;
+$heading: EduNswAct, monospace;

@@ -14,6 +14,7 @@
     --light-fg: rgb(254, 246, 252);
     /*--panel-col: rgb(65, 27, 50);*/
     --accent-col: rgb(229, 98, 157);
+    --accent-gradient: linear-gradient(0deg, rgba(255,83,158,1), rgba(255,158,124,1));
 }
 
 body {
@@ -129,10 +130,18 @@ a {
     gap: 2px;
 }
 
+@keyframes hover {
+    0% {border-radius: 10px;}
+    100% {border-radius: 0px;}
+}
+
 /* Change the color of links on hover */
 .topnav a:hover, button:hover {
     background-color: var(--light-fg);
     color: var(--panel-col);
+    animation: hover;
+    animation-duration: 0.4s;
+    border-radius: 0px;
 }
 
 /* Add a color to the active/current link */

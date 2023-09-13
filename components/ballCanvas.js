@@ -4,7 +4,7 @@ class BallCanvas extends HTMLElement {
     }
 
     addBall() {
-        while (this.balls.length >= 100)
+        while (this.balls.length >= 1000)
             this.balls.pop();
         this.balls.push(
         {  

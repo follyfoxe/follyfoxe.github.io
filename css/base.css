@@ -1,0 +1,127 @@
+@font-face {
+  font-family: EduNswAct;
+  src: url(../fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+body {
+  font-family: Nunito, monospace;
+  background-color: #472e3e;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fef6fc;
+  padding: 20px;
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: EduNswAct, monospace;
+}
+
+h1 {
+  font-size: 240%;
+  margin: 2px 4px;
+}
+
+p, li, a {
+  font-size: 105%;
+  margin: 2px 4px;
+}
+
+a {
+  font-size: 100%;
+  color: #f161a2;
+}
+
+.wrap-panel, .topnav h1, .round-panel, button, .topnav a, .round-panel--heading, .wrap-panel--topleft, .wrap-panel--vertical, .wrap-panel--stretch, .wrap-panel--top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.wrap-panel--top {
+  align-items: start;
+}
+
+.wrap-panel--stretch {
+  align-items: stretch;
+}
+
+.wrap-panel--vertical {
+  flex-direction: column;
+}
+
+.wrap-panel--topleft {
+  align-items: start;
+  flex-direction: column;
+}
+
+.topnav, .round-panel--block, .round-panel, button, .topnav a, .round-panel--heading {
+  margin: 0px;
+  padding: 6px;
+  background-color: #271920;
+  border-color: #f161a2;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 18px;
+}
+
+.round-panel, button, .topnav a, .round-panel--heading {
+  width: fit-content;
+  box-shadow: 2px 2px 8px #271920;
+}
+
+.round-panel--block {
+  display: block;
+}
+
+.round-panel--heading {
+  background-color: #f161a2;
+  border-color: #fef6fc;
+}
+
+button, .topnav a {
+  gap: 2px;
+  border-color: #fef6fc;
+  border-width: 2px;
+  border-radius: 12px;
+  padding: 3px 7px;
+  margin: 2px;
+  color: #fef6fc;
+  font-family: EduNswAct, monospace;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button:hover, .topnav a:hover {
+  background-color: #fef6fc;
+  color: #271920;
+}
+
+button:active, .topnav a:active, .topnav a.active {
+  background-color: #f161a2;
+  color: #fef6fc;
+}
+
+.topnav {
+  position: fixed;
+  top: 10px;
+  overflow: hidden;
+  padding: 2px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 4px 4px 8px black;
+}
+.topnav a {
+  text-decoration: none;
+}
+.topnav h1 {
+  margin: 8px;
+  font-size: larger;
+}
+
+/*# sourceMappingURL=base.css.map */
