@@ -155,6 +155,9 @@ button:active, .topnav a:active, .topnav a.active {
   font-size: larger;
 }
 
+.postview {
+  white-space: pre-line;
+}
 .postview img {
   max-height: 40vh;
 }

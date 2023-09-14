@@ -180,6 +180,7 @@ button:active {
 .postview {
     //@extend .wrap-panel--stretch;
     @extend %panel-shared;
+    white-space: pre-line; // Keep line breaks
     
     img {
         max-height: 40vh;
