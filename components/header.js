@@ -14,6 +14,7 @@ class Header extends HTMLElement {
         
         const pages = [
             { icon: "images/fox.gif", label: "Home", url: "index.html" },
+            { label: String.fromCodePoint(0x0001F4E3) + "Posts", url: "posts.html" },
             { label: String.fromCodePoint(0x2728) + "Projects", url: "projects.html" },
             { label: String.fromCodePoint(0x1F98A) + "About", url: "about.html" },
             { label: String.fromCodePoint(0x1F4C4) + "Archive", url: "archive/index.html" }

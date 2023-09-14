@@ -50,7 +50,7 @@ a {
     width: 100%;
     height: auto;
 }*/
-.wrap-panel, .topnav h1, .round-panel, button, .topnav a, .round-panel--heading, .wrap-panel--topleft, .wrap-panel--vertical, .wrap-panel--stretch, .topnav, .wrap-panel--top {
+.wrap-panel, .topnav h1, .round-panel, button, .topnav a, .round-panel--heading, .wrap-panel--topleft, .postview li, .wrap-panel--vertical, .wrap-panel--stretch, .topnav, .wrap-panel--bottom, .wrap-panel--top {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -61,6 +61,10 @@ a {
   align-items: start;
 }
 
+.wrap-panel--bottom {
+  align-items: end;
+}
+
 .wrap-panel--stretch, .topnav {
   align-items: stretch;
 }
@@ -69,12 +73,12 @@ a {
   flex-direction: column;
 }
 
-.wrap-panel--topleft {
+.wrap-panel--topleft, .postview li {
   align-items: start;
   flex-direction: column;
 }
 
-.topnav, .round-panel--block, .round-panel, button, .topnav a, .round-panel--heading {
+.postview li, .postview, .topnav, .round-panel--block, .round-panel, button, .topnav a, .round-panel--heading {
   margin: 0;
   padding: 1vh;
   background-color: #271920;
@@ -149,6 +153,38 @@ button:active, .topnav a:active, .topnav a.active {
 }
 .topnav h1 {
   font-size: larger;
+}
+
+.postview img {
+  max-height: 40vh;
+}
+.postview ul {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.postview ul.fill {
+  height: auto;
+  overflow: hidden;
+}
+.postview li {
+  margin-left: 0;
+  margin-top: 1vh;
+  margin-right: 1vh;
+  font-size: 2vh;
+}
+.postview li h2 {
+  margin: 0;
+  font-family: Nunito, monospace;
+}
+.postview li h3 {
+  margin: 0;
+  color: #f161a2;
+  font-family: Nunito, monospace;
 }
 
 /*# sourceMappingURL=base.css.map */

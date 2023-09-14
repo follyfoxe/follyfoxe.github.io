@@ -56,6 +56,11 @@ a {
     align-items: start;
 }
 
+.wrap-panel--bottom {
+    @extend .wrap-panel;
+    align-items: end;
+}
+
 .wrap-panel--stretch { // Equal heights.
     @extend .wrap-panel;
     align-items: stretch;
@@ -169,5 +174,50 @@ button:active {
     h1 {
         @extend .wrap-panel;
         font-size: larger;
+    }
+}
+
+.postview {
+    //@extend .wrap-panel--stretch;
+    @extend %panel-shared;
+    
+    img {
+        max-height: 40vh;
+    }
+
+    ul {
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    ul.fill {
+        height: auto;
+        overflow: hidden;
+    }
+
+    li {
+        @extend %panel-shared;
+        @extend .wrap-panel--topleft;
+
+        margin-left: 0;
+        margin-top: 1vh;
+        margin-right: 1vh;
+        font-size: 2vh;
+
+        h2 {
+            margin: 0;
+            font-family: fonts.$main;
+        }
+
+        h3 {
+            margin: 0;
+            color: colors.$accent;
+            font-family: fonts.$main;
+        }
     }
 }
