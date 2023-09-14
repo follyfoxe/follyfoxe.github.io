@@ -99,6 +99,7 @@ a {
     @extend .round-panel;
     background-color: colors.$accent;
     border-color: colors.$fg;
+    //box-shadow: 0 0 1vh colors.$accent;
 }
 
 button {
@@ -117,16 +118,22 @@ button {
     font-size: larger;
     font-weight: bolder;
     text-align: center;
+
+    transition-duration: 0.2s;
 }
 
 button:hover {
     background-color: colors.$fg;
     color: colors.$panel;
+    box-shadow: 0 0 0.3vh colors.$fg;
+    transition-duration: 0.1s;
 }
 
 button:active {
     background-color: colors.$accent;
     color: colors.$fg;
+    box-shadow: 0 0 1vh colors.$accent;
+    transition-duration: 0.1s;
 }
 
 .topnav {
@@ -149,6 +156,11 @@ button:active {
         @extend button;
         text-decoration: none;
     }
+
+    /*a:hover {
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+    }*/
 
     a.active {
         @extend :active;
