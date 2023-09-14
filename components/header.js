@@ -8,7 +8,8 @@ class Header extends HTMLElement {
         div.className = "topnav";
 
         const p = document.createElement("h1");
-        p.textContent = "Folly's lair";
+        p.textContent = String.fromCodePoint(0x2728) + "Folly's lair" + String.fromCodePoint(0x2728);
+        //p.style = "flex-basis: 100%;"
         div.appendChild(p);
         
         const pages = [
@@ -27,7 +28,7 @@ class Header extends HTMLElement {
             {
                 const img = document.createElement("img");
                 img.src = page.icon;
-                img.height = 32;
+                img.style = "height: 3.4vh;";
                 a.appendChild(img);
             }
 
