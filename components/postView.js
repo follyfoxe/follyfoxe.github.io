@@ -18,7 +18,7 @@ class PostView extends HTMLElement {
         div.appendChild(ul);
         this.appendChild(div);
 
-        fetch('settings.json')
+        fetch('/settings.json')
             .then(response => response.json())
             .then(settings => {
                 // Fetch posts.

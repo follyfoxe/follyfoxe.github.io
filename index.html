@@ -5,8 +5,8 @@
     <title>Folly's Lair &lt;3</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/ballCanvas.js" type="text/javascript" defer></script>
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/ballCanvas.js" type="text/javascript" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 <script type="text/javascript">
     window.onload = function() {
-        fetch('settings.json')
+        fetch('/settings.json')
             .then(response => response.json())
             .then(settings => {
                 if (settings.notice)

@@ -12,7 +12,7 @@ class Header extends HTMLElement {
         div.appendChild(p);
         this.appendChild(div);
 
-        fetch('settings.json')
+        fetch('/settings.json')
             .then(response => response.json())
             .then(settings => {
                 p.textContent = settings.navText;

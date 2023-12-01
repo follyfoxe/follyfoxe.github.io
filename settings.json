@@ -1,13 +1,14 @@
 {
     "navText": "✨Folly's lair✨",
     "pages": [
-        { "icon": "images/fox.gif", "label": "Home", "url": "index.html" },
-        { "label": "📣 Posts", "url": "posts.html" },
-        { "label": "✨ Projects", "url": "projects.html" },
-        { "label": "🦊 About", "url": "about.html" },
-        { "label": "📄 Archive", "url": "archive/index.html" }
+        { "icon": "/images/fox.gif", "label": "Home", "url": "/index.html" },
+        { "label": "📣 Posts", "url": "/posts.html" },
+        { "label": "✨ Projects", "url": "/projects.html" },
+        { "label": "🦊 About", "url": "/about.html" },
+        { "label": "📄 Archive", "url": "/archive/index.html" },
+        { "label": "🍊 Orange", "url": "/projects/the_zone/the_zone.html" }
     ],
-    "notice": "The site's url has changed!\nSee [📣 Posts] for more info.",
+    "notice": "The site's url has changed! See [📣 Posts] for more info.",
     "posts": {
         "gistUrl": "https://api.github.com/gists/e5eba7c7a107f1c2e329c56f0f7d0db4",
         "gistFile": "posts.json",
