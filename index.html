@@ -20,12 +20,34 @@
     <br>
 </noscript>
 
-<h1>
+<script type="text/javascript">
+    window.onload = function() {
+        fetch('settings.json')
+            .then(response => response.json())
+            .then(settings => {
+                if (settings.notice)
+                {
+                    const noticeDiv = document.getElementById("notice-div");
+                    const noticeText = document.getElementById("notice-text");
+                    noticeText.textContent = settings.notice;
+                    noticeDiv.removeAttribute("hidden");
+                }
+            });
+    }
+</script>
+
+<div id="notice-div" hidden>
+    <h1><u>ATTENTION!</u></h1>
+    <pre><h1 id="notice-text">Loading...</h1></pre>
+    <div class="space"></div>
+</div>
+
+<!-- <h1>
     I'm taking a break from DISCORD because of my own mental health.<br>
     So i cannot be reached from there!!! sorry! &lt;3
 </h1>
 <p>in the meanwhile, you can reach out to me via: NOTHING<br>because I don't want more people currently :3</p>
-<div class="space"></div>
+<div class="space"></div> -->
 
 <div class="wrap-panel">
     <div class="round-panel--heading"><h1>&#10084; Welcome!!!!! &#10084;</h1></div>

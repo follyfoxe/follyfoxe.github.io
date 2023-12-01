@@ -8,37 +8,32 @@ class Header extends HTMLElement {
         div.className = "topnav";
 
         const p = document.createElement("h1");
-        p.textContent = String.fromCodePoint(0x2728) + "Folly's lair" + String.fromCodePoint(0x2728);
-        //p.style = "flex-basis: 100%;"
+        p.textContent = String.fromCodePoint(0x1F98A) + "Loading...";
         div.appendChild(p);
-        
-        const pages = [
-            { icon: "images/fox.gif", label: "Home", url: "index.html" },
-            { label: String.fromCodePoint(0x0001F4E3) + "Posts", url: "posts.html" },
-            { label: String.fromCodePoint(0x2728) + "Projects", url: "projects.html" },
-            { label: String.fromCodePoint(0x1F98A) + "About", url: "about.html" },
-            { label: String.fromCodePoint(0x1F4C4) + "Archive", url: "archive/index.html" }
-        ];
-        
-        for (const page of pages) {
-            const a = document.createElement("a");
-            if (document.URL.indexOf(page.url) != -1)
-                a.className = "active";
-            
-            if (page.icon)
-            {
-                const img = document.createElement("img");
-                img.src = page.icon;
-                img.style = "height: 3.4vh;";
-                a.appendChild(img);
-            }
-
-            a.appendChild(document.createTextNode(page.label));
-            a.href = page.url;
-            div.appendChild(a);
-        }
-
         this.appendChild(div);
+
+        fetch('settings.json')
+            .then(response => response.json())
+            .then(settings => {
+                p.textContent = settings.navText;
+                for (const page of settings.pages) {
+                    const a = document.createElement("a");
+                    if (document.URL.indexOf(page.url) != -1)
+                        a.className = "active";
+                    
+                    if (page.icon)
+                    {
+                        const img = document.createElement("img");
+                        img.src = page.icon;
+                        img.style = "height: 3.4vh;";
+                        a.appendChild(img);
+                    }
+        
+                    a.appendChild(document.createTextNode(page.label));
+                    a.href = page.url;
+                    div.appendChild(a);
+                }
+            });
     }
 }
 
