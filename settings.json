@@ -8,7 +8,7 @@
         { "label": "📄 Archive", "url": "/archive/index.html" },
         { "label": "🍊 Orange", "url": "/projects/the_zone/the_zone.html" }
     ],
-    "notice": "The site's url has changed! See [📣 Posts] for more info.",
+    "notice": "⚠️ The site's moving to neocities, https://follyfox.neocities.org/ ⚠️",
     "posts": {
         "gistUrl": "https://api.github.com/gists/e5eba7c7a107f1c2e329c56f0f7d0db4",
         "gistFile": "posts.json",
